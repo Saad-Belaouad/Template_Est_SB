@@ -1,0 +1,254 @@
+/*
+Theme Name: Education Zone
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.site-header .header-top .top-links {
+    float: right;
+}
+
+.site-header .header-top .secondary-nav {
+    float: left;
+}
+
+.site-header .header-top .secondary-nav ul {
+    left: 0;
+    right: auto;
+    text-align: left;
+}
+
+.site-header .header-top .secondary-nav ul li:hover > ul {
+    left: 100%;
+    right: auto;
+}
+
+.site-header .header-top .top-links span .fa {
+    margin-right: 0;
+    margin-left: 14px;
+}
+
+.site-header .header-top .top-links span {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.site-header .header-top .top-links span {
+    border-left: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.site-header .header-top .top-links span:first-child {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.site-branding {
+    float: right;
+}
+
+.site-header .form-section {
+    float: left;
+}
+
+.main-navigation li {
+    float: right;
+    margin-right: 42px;
+    margin-left: 0;
+}
+
+.main-navigation li:first-child {
+    margin-right: 0;
+}
+
+.main-navigation ul {
+    padding: 0;
+}
+
+.main-navigation ul ul {
+    padding-right: 0;
+    display: none;
+}
+
+.main-navigation ul li:hover > ul {
+    display: block;
+}
+
+.main-navigation ul ul li {
+    margin-right: 0;
+}
+
+.main-navigation ul ul ul {
+    display: none;
+}
+
+.main-navigation ul ul li:hover > ul {
+    left: auto;
+    right: 100%;
+}
+
+.welcome-note .col,
+.choose-us .col,
+.featured-courses ul li {
+    float: right;
+}
+
+.latest-events .col-1,
+.latest-events .col-2 {
+    float: right;
+}
+
+.latest-events .col-1 .post .image-wrapper .text {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.latest-events .post {
+    text-align: right;
+}
+
+.latest-events .entry-footer {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.latest-events .col-1 .post .entry-meta span {
+    margin-right: 0;
+    margin-left: 38px;
+}
+
+.latest-events .col-1 .fa {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.latest-events .col-2 .fa {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.site-footer .widget-area .col {
+    float: right;
+}
+
+.widget ul li .post .post-thumbnail {
+    float: right;
+    margin-left: 16px;
+    margin-right: 0;
+}
+
+.widget ul li .post .entry-meta .fa {
+    margin-left: 7px;
+    margin-right: 0;
+}
+
+.wpcf7 {
+    direction: rtl;
+}
+
+.widget-area .widget form input[type="search"],
+.page-header form input[type="search"],
+.error404 .not-found form input[type="search"] {
+    float: right;
+}
+
+.widget-area .widget form input[type="submit"],
+.page-header form input[type="submit"],
+.error404 .not-found form input[type="submit"] {
+    float: left;
+}
+
+#crumbs {
+    float: left;
+}
+
+#crumbs a,
+#crumbs span {
+    display: inline-block;
+}
+
+#primary .entry-meta .fa {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+#primary .entry-meta span:first-child {
+    margin-right: 0;
+}
+
+.avatar.photo {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.comment-author.vcard {
+    float: right;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    float: right;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    float: left;
+    text-align: left;
+}
+
+.comment-metadata{
+	float: left;
+}
+
+.comment-content{
+	margin-left: 0;
+	margin-right: 100px;
+}
+
+.reply{
+	margin-left: 0;
+	margin-right: 82px;
+	text-align: right;
+}
+
+.comments-area ol{
+	padding-right: 0;
+}
+
+.comments-area ol ol li{
+	padding-left: 0;
+	padding-right: 40px;
+}
+
+.search .site-content #primary .post-thumbnail{
+	margin-right: 0;
+	margin-left: 30px;
+	float: right;
+}
+
+.gallery .gallery-item{
+	float: right;
+}
+
+@media only screen and (max-width: 991px){
+    .mobile-menu .main-navigation ul li .angle-down {
+        right: auto;
+        left: 0;
+    }
+}
