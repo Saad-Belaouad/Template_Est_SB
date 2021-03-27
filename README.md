@@ -1,4 +1,4 @@
-## Projet WordPress
+# Projet WordPress
 
 This project is a WordPress template, it's a facility and guidance for the students who would like to know more about The Higher School of Technology of Sidi-Bennour 
 It includes a description of all 3 files in our school, a general presentation of the school and all the informations that would be helpfull for the students. 
